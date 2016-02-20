@@ -55,7 +55,7 @@
                     $link = "gala-results/view.php?id=" . $gala->getID();
 
                     echo '<div class="large-12 medium-12 small-12 columns centre">
-                            <h3 class="h4 capitalise"><a href="' . $link . '">Title' . $galaresults['title'] . '</a></h3>
+                            <h3 class="h4 capitalise"><a href="' . $link . '">Title: ' . $galaresults['Title'] . '</a></h3>
                             <h4 class="h6"><i>' . $venue->getVenue() . ' - ' . date("d/m/Y", strtotime($gala->getDate())) . '</i></h4>
                     </div>';
                 }
