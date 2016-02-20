@@ -108,19 +108,19 @@ class Galas {
             $results = $stmt->fetchAll();
             
             foreach ($results as $row) {
-                $this->setID($row["id"]);
-                $this->setTitle($row["title"]);
-                $this->setDescription($row["description"]);
-                $this->setDate($row["date"]);
-                $this->setIsAccredited($row["isAccredited"]);
-                $this->setIsLongCourse($row["isLongCourse"]);
-                $this->setVenueID($row["venueID"]);
-                $this->setWarmUpTime($row["warmUpTime"]);
-                $this->setOrganiser($row["organiser"]);
-                $this->setFees($row["fees"]);
-                $this->setConfirmationDate($row["confirmationDate"]);
-                $this->setCutOffDate($row["cutOffDate"]);
-                $this->setNotes($row["notes"]);
+                $this->getID($row["id"]);
+                $this->getTitle($row["title"]);
+                $this->getDescription($row["description"]);
+                $this->getDate($row["date"]);
+                $this->getIsAccredited($row["isAccredited"]);
+                $this->getIsLongCourse($row["isLongCourse"]);
+                $this->getVenueID($row["venueID"]);
+                $this->getWarmUpTime($row["warmUpTime"]);
+                $this->getOrganiser($row["organiser"]);
+                $this->getFees($row["fees"]);
+                $this->getConfirmationDate($row["confirmationDate"]);
+                $this->getCutOffDate($row["cutOffDate"]);
+                $this->getNotes($row["notes"]);
             }
             return true;
         } catch (PDOException $e) {
