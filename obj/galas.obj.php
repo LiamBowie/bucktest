@@ -123,6 +123,7 @@ class Galas {
                 $this->getNotes($row["notes"]);
             }*/
             return $results;
+            echo $results['Title'];
         } catch (PDOException $e) {
             return "Query failed: " . $e->getMessage();
         }    
