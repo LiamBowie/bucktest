@@ -74,7 +74,7 @@
                   <a href="http://bucktest-rgu.azurewebsites.net/about.php" role="link">About</a> 
                   <ul class="dropdown">
                      <li><a href="http://bucktest-rgu.azurewebsites.net/about.php" role="link">About BASC</a></li>
-                     <li><a href="http://bucktest-rgu.azurewebsites.net/about/committee.php" role="link">Committee</a></li>
+                     <li><a href="/about/committee.php" role="link">Committee</a></li>
                      <li><a href="http://bucktest-rgu.azurewebsites.net/about/timetable.php" role="link">Timetable</a></li>
                      <li><a href="http://bucktest-rgu.azurewebsites.net/about/club-records.php" role="link">Club Records</a></li>
                      <li><a href="http://bucktest-rgu.azurewebsites.net/about/join.php" role="link">Join Us</a></li>
