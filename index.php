@@ -48,7 +48,7 @@
                     <div class="row">';
                 foreach ($galaList as $galaItem) {
                     $gala->setID($galaItem["id"]);
-                    $galaresults = $gala->getAllDetails($conn);
+                    $galaresults = $gala->getAllDetails($conn, $gala);
                     $venue->setID($gala->getVenueID());
                     $venue->getAllDetails($conn);
 

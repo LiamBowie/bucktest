@@ -98,10 +98,10 @@ class Galas {
     }
     
     // ***** OTHER METHODS *****    
-    public function getAllDetails($conn) {
+    public function getAllDetails($conn, $id) {
         $sql = "SELECT * FROM galas WHERE id = ':id'";
         $stmt = $conn->prepare($sql);
-        $stmt->bindParam(':id', $this->id, PDO::PARAM_STR);
+        $stmt->bindParam(':id', $id, PDO::PARAM_STR);
 
         try {
             $stmt->execute();
