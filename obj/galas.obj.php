@@ -122,7 +122,7 @@ class Galas {
                 $this->setCutOffDate($row["cutOffDate"]);
                 $this->setNotes($row["notes"]);
             }
-            return true;
+            return $results;
         } catch (PDOException $e) {
             return "Query failed: " . $e->getMessage();
         }    
