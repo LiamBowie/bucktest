@@ -107,7 +107,7 @@ class Galas {
             $stmt->execute();
             $results = $stmt->fetchAll();
             
-            /*foreach ($results as $row) {
+            foreach ($results as $row) {
                 $this->getID($row["id"]);
                 $this->getTitle($row["title"]);
                 $this->getDescription($row["description"]);
@@ -121,7 +121,7 @@ class Galas {
                 $this->getConfirmationDate($row["confirmationDate"]);
                 $this->getCutOffDate($row["cutOffDate"]);
                 $this->getNotes($row["notes"]);
-            }*/
+            }
             return $results;
         } catch (PDOException $e) {
             return "Query failed: " . $e->getMessage();
