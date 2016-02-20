@@ -52,9 +52,8 @@
                     $memberItem->setUsername($newsItem->getAuthor());
 
                     $link = "news/view.php?id=" . $newsItem->getID();
-                    
                     echo '<article>
-                    <h3><a href="' . $link . '">' . $newsItem->getTitle() . '</a></h3>
+                    <h3><a href="' . $link . '">$newsItem->getTitle() </a></h3>
                     <h4 class="capitalise">' . $newsItem->getSubtitle() . '</h4>
                     <h5><i>By ' . $memberItem->getFullNameByUsername($conn) . ' on ' . date("jS F Y", strtotime($newsItem->getDate())) . '</i></h5>
                     <p>' . $newsItem->getSummary(250) . '</p>
